@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="follow, index">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="outer-wrapper">
+      <header class="section section--fullwidth header">
+        <div class="masthead row">
+          <h1>
+            <a class="website-title" href="../">foz://a hacks</a>
+          </h1>
+          <form>
+            <input class="search__input" type="search" placeholder="search fozilla hacks" value="">
+          </form>
+          <nav class="social">
+            <a href="">rss</a>
+            <a href="../wiki.html">wiki</a>
+            <a href="">posts</a>
+            <a href="../bookmarks.html">bookmarks</a>
+          </nav>
+        </div>
+      </header>
+      <main id="content-main" class="section article">
+        <button id="go-back">go back</button>
+        <article class="post" role="article">
+          <h1>wiki - uses</h1>
+          <div class="wiki-buttons">
+            <button><a href="./meta.html">meta</a></button>
+            <button><a href="./changelog.html">changelog</a></button>
+            <button class="selected"><a href="./uses.html">uses</a></button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu mauris lorem. 
+            Quisque consequat volutpat neque non tincidunt. Ut fermentum enim nunc, quis lobortis 
+            felis volutpat id. Vestibulum fermentum est tortor, nec cursus nulla viverra et. 
+          </p>
+          <h2>heading pt.1</h2>
+          <ul>
+            <li>
+              <a href="">doom emacs</a>
+            </li>
+            <li><a href="">the vegetarian</a></li>
+            <li><a href="">the lost drafts</a></li>
+          </ul>
+          <h3>subheading</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu mauris lorem. 
+            Quisque consequat volutpat neque non tincidunt. Ut fermentum enim nunc, quis lobortis 
+            felis volutpat id. Vestibulum fermentum est tortor, nec cursus nulla viverra et. 
+          </p>
+          <section class="about">
+            <h2 class="about__header">
+              about
+              <a href="">jobibu</a>
+            </h2>
+            <p>
+              weirdo figuring out how to manage this site with entriies and spells
+            </p>
+            <ul class="author-meta fa-ul">
+              <li><a href="">https://google.com</a></li>
+              <li><a href="">https://lobste.rs</a></li>
+            </ul>
+            <p>
+              <a href="./">more articles by jobibu</a>
+            </p>
+          </section>
+          <section class="promo">
+            <form class="newsletter block block--1 block--polite">
+              <h2 class="heading">discover great resources for shit</h2>
+              <p>sign up for the newsletter</p>
+              <input class="newsletter__input" name="email" size="14" type="email" placeholder="you@example.com" value="">
+              <input id="newsletterPrivacyInput" name="privacy" type="checkbox">
+              <label for="newsletterPrivacyInput">
+                i'm okay with fozilla handling my info as explained in this
+                <a href="">privacy policy</a>
+              </label>
+              <button id="newsletter-submit" class="button positive" type="submit">sign up now</a>
+            </form>
+          </section>
+
+        </article>
+      </main>
+      <footer class="footer section section--fullwidth">
+        <div class="row">
+          <p>
+            except where otherwise noted, everything ehre is not finalized and 
+            will be chugging out more and more versions.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    document.getElementById("go-back").addEventListener("click", () => 
+      {
+          history.back();
+      });
+  </script>
+</html>
