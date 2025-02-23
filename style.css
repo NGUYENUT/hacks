@@ -5,6 +5,15 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  --bg: #fff;
+  --fg: #333;
+  --a-fg: #fff;
+  --a-bg: #1f4d78;
+  --hover: #0095DD;
+  --visited: #005CA5;
+  --footer-bg: #1862a7;
+  --button-bg: #00659A;
+
 }
 
 /**
@@ -383,8 +392,8 @@ html, body {
 }
 
 body {
-  background: #fff;
-  color: #333;
+  background: var(--bg);
+  color: var(--fg);
   font-family: system-ui;
   font-size: 100%;
   font-weight: 400;
@@ -419,10 +428,10 @@ h4 {
 
 a:link,
 a:visited {
-  color: #005CA5;
+  color: var(--visited);
 }
 a:hover {
-  color: #0095DD;
+  color: var(--hover);
 }
 
 button::-moz-focus-inner,
@@ -436,8 +445,8 @@ button {
   border: 0;
   padding: .5em .75em;
   line-height: 1em;
-  background: #00659A;
-  color: #fff;
+  background: var(--button-bg);
+  color: var(--a-fg);
 }
 button::-moz-focus-inner {
 	border: 0;
@@ -487,7 +496,7 @@ td, th {
 }
 
 .outer-wrapper {
-  border-top: 2px solid #fff;
+  border-top: 2px solid var(--bg);
   min-height: 100%;
   overflow: hidden;
 }
@@ -516,8 +525,8 @@ td, th {
 }
 
 .header {
-  background-color: #1f4d78;
-  color: #fff;
+  background-color: var(--a-bg);
+  color: var(--a-fg);
 }
 
 .read-more {
@@ -558,8 +567,8 @@ td, th {
 }
 
 .footer {
-  background: #1862a7;
-  color: #fff;
+  background: var(--footer-bg);
+  color: var(--a-fg); #fff;
   font-size: 0.8em;
   text-align: left;
   position: relative;
@@ -629,7 +638,7 @@ nav.social {
     top: 1em;
     font-size: 1.15em;
     a {
-      color: #fff;
+      color: var(--a-fg);
     }
     a:hover {
       text-decoration: none;
@@ -686,7 +695,7 @@ nav.social {
 }
 
 .masthead {
-  color: #fff;
+  color: var(--a-fg);
   padding-top: 2.5rem;
   padding-bottom: 2em;
   position: relative;
