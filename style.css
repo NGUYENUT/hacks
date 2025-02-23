@@ -16,6 +16,19 @@ html {
 
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+.post-title { 
+  view-transition-name: post-title; 
+}
+
+.post-link { 
+  view-transition-name: post-title; 
+}
+
+
 /**
  * add correct display in IE 9
  * 1. add correct display in edge, ie, and firefox
@@ -776,3 +789,5 @@ a.website-title:hover {
   border: 2px solid #233d2d;
   box-shadow: 5px 5px 0 #aa336a;
 }
+
+
